@@ -33,7 +33,10 @@ import ScheduleCallForm from "./components/ScheduleCallForm";
 import WhatsAppButton from "./components/WhatsAppButton";
 import LiveChatWidget from "./components/LiveChatWidget";
 import "./App.css";
-
+import FoodieDashImage from "./assets/FoodieDash.png";
+import CareLinkImage from "./assets/CareLink.png";
+import EstateFlowImage from "./assets/EstateFlow.png";
+import LocalBoostImage from "./assets/LocalBoost.png";
 const Home = () => {
   const [showBookForm, setShowBookForm] = useState(false);
   const [showCallForm, setShowCallForm] = useState(false);
@@ -119,25 +122,25 @@ const Home = () => {
       name: "FoodieDash",
       description: "Cloud Kitchen Ordering App with real-time order tracking and payment integration.",
       tech: "React Native • Node.js • MongoDB • Stripe",
-      image: "https://images.unsplash.com/photo-1714507087318-6f6a7acb80f5?crop=entropy&cs=srgb&fm=jpg&q=85&w=800"
+      image: FoodieDashImage
     },
     {
       name: "CareLink",
       description: "Clinic Appointment Website with patient management and automated reminders.",
       tech: "React • FastAPI • PostgreSQL",
-      image: "https://images.unsplash.com/photo-1672343246306-cb1467a33140?crop=entropy&cs=srgb&fm=jpg&q=85&w=800"
+      image: CareLinkImage
     },
     {
       name: "EstateFlow",
       description: "Real Estate Lead Management Dashboard with CRM and analytics.",
       tech: "Next.js • Express • MySQL • Chart.js",
-      image: "https://images.unsplash.com/photo-1714507087318-6f6a7acb80f5?crop=entropy&cs=srgb&fm=jpg&q=85&w=800"
+      image: EstateFlowImage
     },
     {
       name: "LocalBoost",
       description: "Small Business Digital Marketing Setup with social media automation.",
       tech: "WordPress • Google Ads • Meta Ads",
-      image: "https://images.unsplash.com/photo-1672343246306-cb1467a33140?crop=entropy&cs=srgb&fm=jpg&q=85&w=800"
+      image: LocalBoostImage
     }
   ];
 
