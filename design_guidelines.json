@@ -1,0 +1,118 @@
+{
+  "identity": {
+    "name": "TechNexus India",
+    "persona": "The Industrial Minimalist",
+    "tone": "Reliable, High-Tech, Accessible, Structural",
+    "core_philosophy": "Affordable Tech Power. No fluff, just function.",
+    "design_principles": [
+      "Fusion over Imitation: Mix Swiss Poster aesthetics with SaaS utility.",
+      "Emotion First: Trust is built through clarity and structure.",
+      "Content is King: Every pixel must serve the user's goal (booking/contact).",
+      "Negative Space: Use whitespace as a luxury material.",
+      "Contrast: High-contrast grayscale for maximum readability and impact."
+    ]
+  },
+  "typography": {
+    "primary_font": "Space Grotesk",
+    "secondary_font": "Manrope",
+    "usage": {
+      "headings": "Space Grotesk, font-bold, tracking-tight, uppercase for section titles",
+      "body": "Manrope, font-normal, leading-relaxed, text-gray-600",
+      "ui_elements": "Manrope, font-medium, tracking-wide, uppercase for buttons/labels"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tighter",
+      "h2": "text-3xl md:text-5xl font-bold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-semibold",
+      "body": "text-base md:text-lg text-gray-600"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#363636",
+      "secondary": "#5E5E5E",
+      "accent": "#878787",
+      "background": "#FFFFFF",
+      "surface": "#F5F5F5",
+      "border": "#D3D3D3"
+    },
+    "usage": {
+      "background": "bg-white or bg-[#F5F5F5] for sections",
+      "text_primary": "text-[#363636]",
+      "text_secondary": "text-[#5E5E5E]",
+      "border": "border-[#D3D3D3]",
+      "interactive": "hover:bg-[#363636] hover:text-white transition-colors"
+    },
+    "e1_twist": "Use a subtle 'noise' texture overlay on solid gray backgrounds to prevent digital flatness. Use high-contrast black borders (2px) for key interactive elements."
+  },
+  "layout": {
+    "grid_system": "Tailwind Grid",
+    "spacing": {
+      "section_padding": "py-20 md:py-32",
+      "container_padding": "px-6 md:px-12",
+      "element_gap": "gap-8 md:gap-12"
+    },
+    "strategies": [
+      {
+        "name": "The Tetris Grid",
+        "usage": "Portfolio Section",
+        "description": "Asymmetrical grid with spanning columns (col-span-2, col-span-1) to create visual interest."
+      },
+      {
+        "name": "The Tracing Beam",
+        "usage": "Services Cards",
+        "description": "Cards with a subtle moving gradient border or hover glow effect."
+      }
+    ]
+  },
+  "components": {
+    "buttons": {
+      "style": "Sharp edges or pill-shaped. Solid #363636 background with white text. Hover: Scale 1.05 or invert colors.",
+      "classes": "bg-[#363636] text-white px-8 py-4 rounded-full font-medium transition-all hover:scale-105 active:scale-95"
+    },
+    "cards": {
+      "style": "Minimalist, white background, 1px border #D3D3D3. No heavy shadows. Focus on typography and spacing.",
+      "classes": "bg-white border border-[#D3D3D3] p-8 rounded-xl hover:border-[#363636] transition-colors"
+    },
+    "forms": {
+      "library": "shadcn/ui",
+      "customization": "Remove default rounded-md, make inputs sharp or pill. Use #F5F5F5 background for inputs."
+    },
+    "navigation": {
+      "style": "Sticky glassmorphism header. Simple text links. 'Book Now' as a primary CTA button.",
+      "classes": "backdrop-blur-md bg-white/80 border-b border-[#D3D3D3]/50"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Subtle grain/noise overlay on hero section.",
+    "animations": "Framer Motion for scroll reveals. Staggered entrance for list items. Smooth parallax for background elements.",
+    "icons": "Lucide React (Stroke width 1.5px for elegance)."
+  },
+  "images": {
+    "hero_bg": "https://images.unsplash.com/photo-1632862851787-d31685eee5c9?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "tech_team": "https://images.unsplash.com/photo-1681164315051-add1906a9b07?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "cloud_kitchen": "https://images.unsplash.com/photo-1644945448252-60aaeb0a5bf0?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "abstract_texture": "https://images.unsplash.com/photo-1648708989736-ce3c2d9f90f2?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "placeholder_portfolio": [
+      "https://images.unsplash.com/photo-1714507087318-6f6a7acb80f5?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1672343246306-cb1467a33140?crop=entropy&cs=srgb&fm=jpg&q=85"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'lucide-react', 'framer-motion', 'clsx', 'tailwind-merge' if not present.",
+    "2. FONTS: Import 'Space Grotesk' and 'Manrope' from Google Fonts in index.css.",
+    "3. GLOBAL STYLES: Apply 'bg-white text-[#363636] font-sans antialiased' to body.",
+    "4. HERO: Create a split layout. Left: Massive typography 'TechNexus'. Right: Abstract geometric image or 3D element.",
+    "5. SERVICES: Use a grid of cards. Each card should have a hover effect that highlights the border.",
+    "6. FORMS: Use shadcn components for 'Book Now' and 'Schedule Call'. Ensure they are fully responsive.",
+    "7. FOOTER: Minimalist. Large 'Let's Build' text. Social links. Copyright.",
+    "8. CRITICAL: Do not use gradients. Stick to solid colors and textures. Use whitespace to create hierarchy."
+  ],
+  "universal_guidelines": [
+    "Avoid generic 'AI slop' aesthetics.",
+    "Use 2-3x more spacing than typical.",
+    "Every interaction needs a micro-animation.",
+    "Ensure high contrast for accessibility.",
+    "Mobile-first responsive design is mandatory."
+  ]
+}
